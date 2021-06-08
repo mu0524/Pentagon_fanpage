@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #ffe8f1;
+    overflow-x: hidden;
+}
+
+.menu {
+    background-color: #ffc9c7;
+    height: 5vh;
+    border-bottom: 5px solid #fff;
+}
+
+.menu_top {
+    display: flex;
+    float: right;
+    padding: 5px;
+    margin-right: 30px;
+}
+
+.menu_top a {
+    text-decoration: none;
+}
+
+.menuli {
+    list-style: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link {
+    color: #FB5978;
+    text-shadow: 2px 0 0 #fff;
+}
+
+.active {
+    color: #7B5EA1;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 12px;
+    font-family: Calibri,'Noto Sans TC';
+    color: #FB5978;
+}
+
+/* 卷軸底色 */
+::-webkit-scrollbar { width:5px; background-color:#fff;}
+/* 卷軸拉的軸軌的顏色 */
+::-webkit-scrollbar-thumb:vertical {background-color:#FB5978;}
+
+
+/*反白*/
+::selection {color: #7B5EA1;}
+::-moz-selection {color: #7B5EA1;}
