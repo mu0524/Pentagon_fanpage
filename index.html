@@ -7,12 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script src="js/jquery-3.6.0.js"></script>
-    <script src="js/menu.js"></script>
+    
 	
-</head>
-
-<body>
-    <div class="menu">
+	<div class="menu">
+		<a id="menubtn" class="toggle-nav" href="#" onclick="menubtn()">☰</a>
+	</div>
+	<div id="lft_menu">
+		<a class="close_btn" href="#" onclick="closebtn()">✖</a>
 		<ul class="menu_top">
 			<li class="menuli">
 				<a class="nav-link active" href="index.html">Home</a>
@@ -28,26 +29,22 @@
 			</li>
 		</ul>
 	</div>
-	
+	<script src="js/menu.js"></script>
+</head>
+
+<body>
 	<div class="container-fluid">
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
-		<h1>123</h1>
+		<embed class="logo_img" src="img/logo.svg" type="image/svg+xml" />
+		<hr class="hr_yellow">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-md-8">
+				<img id="img_romantic" class="img-fluid" onmouseover="img_romantic_in()" onmouseout="img_romantic_out()" src="./img/pentagon.png">
+				<img id="img_romantic_ro" class="img-fluid" onmouseover="img_romantic_in()" onmouseout="img_romantic_out()" src="./img/pentagon-ro.png">
+				<p>456789</p>
+			</div>
+			<div class="col"></div>
+		</div>
 	</div>
 </body>
 </html>
