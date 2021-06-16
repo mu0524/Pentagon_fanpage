@@ -4,7 +4,7 @@ function menubtn() {
 }
 
 function closebtn() {
-    $("#lft_menu").animate({"left":"-21%"},500)
+    $("#lft_menu").animate({"left":"-21%"},500);
     $("#menubtn").fadeIn("slow");
 }
 
