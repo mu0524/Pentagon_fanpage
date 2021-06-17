@@ -200,7 +200,8 @@ img {
 
 #first {
     width: 100%;
-    margin: 65px 0;
+    padding: 65px 0;
+    margin: 0;
 }
 
 .logo_img {
