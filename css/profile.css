@@ -15,10 +15,10 @@ body {
 
 
 #mainNav {
-    background-color: #f1abc790;
-    border-bottom: 5px solid #fff;
+    background-color: #f1abc700;
     padding-top: 0;
     padding-bottom: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
     transition: .8s;
 }
 
@@ -26,11 +26,7 @@ body {
     color: #FA8A8A;
     -webkit-text-stroke: 1.5px #fff;
     font-family: 'Staatliches', cursive;
-    font-size: 1.75rem;
-}
-
-#mainNav.navbar-shrink .navbar-brand {
-    font-size: 2em;
+    font-size: 1.2rem;
 }
 
 #mainNav .navbar-toggler {
@@ -43,13 +39,14 @@ body {
 
 #mainNav.navbar-shrink {
     transition: .8s;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background-color: #f5ccdc;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    background-color: #f1abc790;
+    border-bottom: 2px solid #fff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     font-family: 'Megrim', cursive;
     opacity: .6;
@@ -64,6 +61,38 @@ body {
 .navbar-dark .navbar-toggler {
     color: #fff;
     border-color: #ffffff00;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    opacity: .5;
+    transition: 1s;
+}
+
+.go-top:hover {
+    opacity: 1;
+}
+
+.top {
+    color: #c9547f;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.top:hover {
+    color: #fff;
+}
+
+header.masthead {
+    height: 100vh;
+    padding-top: 4rem;
+}
+
+section {
+    padding: 4rem 0;
 }
 
 .hr_yellow {
@@ -98,31 +127,9 @@ body {
     background: linear-gradient(90deg, #336E7400 0%, #75589B 50%, #336E7400 100%);
 }
 
-
-@media (min-width:576px) {
-    .container {
-        max-width: 540px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width:768px) {
-    .container {
-        max-width: 720px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-}
-
 @media (min-width:1200px) {
     .container {
-        max-width: 1300px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 }
@@ -141,17 +148,13 @@ body {
 .content_ptg {
     text-align: left;
     font-family: Calibri,'Noto Sans TC';
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 90px;
-    margin-left: 10px;
+    margin-left: 12px;
     color: #B64D60;
     text-shadow: 2px 2px 0 #ffe4e4;
     line-height: 200%;
     letter-spacing: 2px;
-}
-
-.container {
-    max-width: 1500px;
 }
 
 #third {
