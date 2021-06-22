@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 *{
     margin: 0;
@@ -45,6 +46,10 @@ body {
     border-bottom: 2px solid #fff;
 }
 
+#mainNav.navbar-shrink:hover {
+    background-color: #f9e3d9;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 1.2rem;
     color: #fff;
@@ -65,8 +70,8 @@ body {
 
 .go-top {
     position: fixed;
-    bottom: 1vh;
-    right: 1vw;
+    bottom: 1rem;
+    right: 1rem;
     opacity: .5;
     transition: 1s;
 }
@@ -94,7 +99,7 @@ header.masthead {
 
 header.masthead .masthead-heading {
     font-size: 6.5rem;
-    font-family: 'Staatliches';
+    font-family: 'Staatliches', cursive;
     line-height: 5rem;
     background: #ffea79;
     background-clip: text;
@@ -115,9 +120,9 @@ header.masthead .masthead-subheading {
     color: #fff;
 }
 
-section {
-    padding: 4rem 0;
-}
+/* section {
+    padding: 5rem 0;
+} */
 
 .hr_yellow {
     width: 80vw;
@@ -151,8 +156,201 @@ section {
     background: linear-gradient(90deg, #336E7400 0%, #75589B 50%, #336E7400 100%);
 }
 
+.text-left {
+    text-align: left !important;
+}
 
+.h1-text {
+    background: linear-gradient(90deg, #F75573 0%, #75589B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 13rem;
+    -webkit-text-stroke: 2px #fff;
+    font-size: 4rem;
+    font-family: 'Concert One', cursive;
+}
 
+.h1-text-2 {
+    background: linear-gradient(90deg, #F75573 0%, #75589B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 13rem;
+    -webkit-text-stroke: 2px #fff;
+    font-size: 4rem;
+    font-family: 'Concert One', cursive;
+    margin:0 auto;
+}
+
+.awards-content {
+    text-align: left;
+    font-family: 'Noto Sans TC', cursive;
+    color: #B64D60;
+    text-shadow: 2px 2px 0 #ffe4e4;
+    letter-spacing: 2px;
+}
+
+#second {
+    background: linear-gradient(0deg, #F9E7E600 0%, #F9E7E6 50%, #F9E7E600 100%);
+}
+
+.timeline-dot-first {
+    color: #CFB8E7;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #CFB8E7;
+}
+
+.timeline::before {
+    top: 25px;
+}
+
+.timeline > li .timeline-panel {
+    padding: 0 0 0 100px;
+    top: -50px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', cursive;
+}
+
+.timeline-heading h4{
+    letter-spacing: 5px;
+    font-family: 'Noto Sans TC', cursive;
+}
+
+#h4-first {
+    color: #75589B;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-first {
+    color: #75589B;
+}
+
+.timeline-dot-second {
+    color: #F1ABC7;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #F1ABC7;
+}
+
+#h4-second {
+    color: #F75573;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-second {
+    color: #F75573;
+}
+
+.timeline-dot-third {
+    color: #F8ECA0;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #F8ECA0;
+}
+
+#h4-third {
+    color: #F79955;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-third {
+    color: #F79955;
+}
+
+.timeline-dot-fourth {
+    color: #74DEE1;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #74DEE1;
+}
+
+#h4-fourth {
+    color: #589B93;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-fourth {
+    color: #589B93;
+}
+
+.timeline-dot-fifth {
+    color: #F75573;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #F75573;
+}
+
+#h4-fifth {
+    color: #F75555;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-fifth {
+    color: #F75555;
+}
+
+.timeline-dot-sixth {
+    color: #807C7D;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -3px 2px 0 #807C7D;
+}
+
+#h4-sixth {
+    color: #9B5864;
+    text-shadow: 2px 1px 0 #FFF;
+}
+
+.content-sixth {
+    color: #9B5864;
+}
+
+.timeline::before {
+    background-image: linear-gradient(180deg, #75589B 0%, #F1ABC7 15%, #FFEA62 40%, #74DEE1 60%, #F75573 80%, #807C7D 100%);
+    height: 103rem;
+    width: 1.5px;
+}
+
+.footer {
+    background-color: #f9e3d9;
+    border-top: 2px solid #fff;
+}
+
+.cube-logo {
+    width: 22%;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+    transition: .8s;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #c5bef2;
+    border-color: #fff;
+}
+
+.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+}
+
+.btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #ff898980;
+}
+
+.btn-check:focus + .btn-dark, .btn-dark:focus {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+    box-shadow: 0 0 0 0.25rem #ff898980;
+}
 
 /* 卷軸底色 */
 ::-webkit-scrollbar { width:5px; background-color:#fbfbfb;}
@@ -161,5 +359,5 @@ section {
 
 
 /*反白*/
-::selection {color: #fff; background-color: #FFD6E4;}
-::-moz-selection {color: #fff; background-color: #FFD6E4;}
+::selection {color: #FA8A8A;}
+::-moz-selection {color: #FA8A8A;}

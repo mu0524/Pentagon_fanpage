@@ -16,7 +16,7 @@ body {
 /* background:linear-gradient(180deg, #fbfbfb 0% ,#FBE7EE 30%, #FEFFD6 40%, #D4D6FE 70%, #FFD6E4 100%); */
 
 #mainNav {
-    background-color: #f1abc700;
+    background-color: #f9e3d900;
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -46,6 +46,10 @@ body {
     border-bottom: 2px solid #fff;
 }
 
+#mainNav.navbar-shrink:hover {
+    background-color: #f9e3d9;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 1.2rem;
     color: #fff;
@@ -66,8 +70,8 @@ body {
 
 .go-top {
     position: fixed;
-    bottom: 1vh;
-    right: 1vw;
+    bottom: 1rem;
+    right: 1rem;
     opacity: .5;
     transition: 1s;
 }
@@ -166,16 +170,52 @@ section {
 
 #fourth {
     padding-top: 12rem;
-    padding-bottom: 2rem;
-    background:linear-gradient(180deg, #d4d6fe00 0%, #d4d6fe 20%, #ffd6e4 80%, #ffd6e400 100%);
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, #fbfbfb 0%, #d4d6fe 20%, #ffd6e4 80%, #fbfbfb 100%);
 }
 
 .lot_img {
     width: 80%;
 }
 
+.footer {
+    background-color: #f9e3d9;
+    border-top: 2px solid #fff;
+}
 
+.cube-logo {
+    width: 22%;
+}
 
+.btn-dark {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+    transition: .8s;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #c5bef2;
+    border-color: #fff;
+}
+
+.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+}
+
+.btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #ff898980;
+}
+
+.btn-check:focus + .btn-dark, .btn-dark:focus {
+    color: #fff;
+    background-color: #ff8989;
+    border-color: #ff8989;
+    box-shadow: 0 0 0 0.25rem #ff898980;
+}
 
 /* 卷軸底色 */
 ::-webkit-scrollbar { width:5px; background-color:#fbfbfb;}
@@ -184,5 +224,5 @@ section {
 
 
 /*反白*/
-::selection {color: #fff; background-color: #FB5978;}
-::-moz-selection {color: #fff; background-color: #FB5978;}
+::selection {color: #FA8A8A;}
+::-moz-selection {color: #FA8A8A;}
