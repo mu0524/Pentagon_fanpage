@@ -96,10 +96,6 @@ header.masthead {
     padding-top: 4rem;
 }
 
-section {
-    padding: 4rem 0;
-}
-
 .hr_yellow {
     width: 80vw;
     height: 1px;
@@ -139,6 +135,11 @@ section {
     }
 }
 
+footer .container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
 .logo_img {
     width: 60vw;
     margin: 2vw 0;
@@ -154,7 +155,6 @@ section {
     text-align: left;
     font-family: Calibri,'Noto Sans TC';
     font-size: 1rem;
-    margin-top: 90px;
     margin-left: 12px;
     color: #B64D60;
     text-shadow: 2px 2px 0 #ffe4e4;
@@ -203,6 +203,20 @@ section {
     background-color: #ff8989;
     border-color: #ff8989;
     box-shadow: 0 0 0 0.25rem #ff898980;
+}
+
+.PTG {
+    font-size: 4.5rem;
+    font-family: 'Staatliches', cursive;
+    line-height: 5rem;
+    background: #FFFF9E;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 4px 4px 0 #F7557380;
+    letter-spacing: 0.4rem;
+    margin-left: .4rem;
 }
 
 

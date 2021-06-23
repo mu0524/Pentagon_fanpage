@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 *{
     margin: 0;
@@ -49,7 +50,6 @@ body {
     background-color: #f9e3d9;
 }
 
-
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 1.2rem;
     color: #fff;
@@ -93,12 +93,36 @@ body {
 
 header.masthead {
     height: 100vh;
-    padding-top: 4rem;
+    background-image: url('../img/texture.png');
+    border-bottom: 10px solid #f1abc790;
 }
 
-section {
-    padding: 4rem 0;
+header.masthead .masthead-heading {
+    font-size: 6.5rem;
+    font-family: 'Staatliches', cursive;
+    line-height: 5rem;
+    background: #ffea79;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 4px 4px 0 #F75573;
+    letter-spacing: 1rem;
+    margin-bottom: 1.2rem;
 }
+
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1rem;
+    margin-bottom: 0rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
+}
+
+/* section {
+    padding: 5rem 0;
+} */
 
 .hr_yellow {
     width: 80vw;
@@ -133,60 +157,6 @@ section {
 }
 
 
-@media (min-width:576px) {
-    .container {
-        max-width: 540px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width:768px) {
-    .container {
-        max-width: 720px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-}
-
-.logo_img {
-    width: 60vw;
-    margin: 2vw 0;
-}
-
-.pen_title {
-    float: left;
-    width: 35%;
-    padding: 0 10px;
-}
-
-.content_ptg {
-    text-align: left;
-    font-family: Calibri,'Noto Sans TC';
-    font-size: 1rem;
-    margin-top: 90px;
-    margin-left: 12px;
-    color: #B64D60;
-    text-shadow: 2px 2px 0 #ffe4e4;
-    line-height: 200%;
-    letter-spacing: 2px;
-}
-
-#third {
-    padding-top: 0;
-}
 
 .footer {
     background-color: #f9e3d9;
@@ -226,6 +196,14 @@ section {
     border-color: #ff8989;
     box-shadow: 0 0 0 0.25rem #ff898980;
 }
+
+#myCanvas {
+    width: 65%;
+    height: 80vh;
+    position: relative;
+    top: -13rem;
+}
+
 
 /* 卷軸底色 */
 ::-webkit-scrollbar { width:5px; background-color:#fbfbfb;}

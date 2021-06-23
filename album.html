@@ -7,10 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/album.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/pentagon.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script src="xeogl/xeogl.js"></script>
+    <script src="xeogl/js/models/glTFModel.js"></script>
 </head>
 
 <body id="page-top">
@@ -24,72 +28,86 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="album.html">Album</a></li>
-                        <li class="nav-item"><a class="nav-link" href="award.html">Award</a></li>
+                        <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="award.html">Award</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 		<div class="go-top"><a class="top" href="#page-top">︿</a></div>
+	</div>
 		<header class="masthead">
-			<div class="container">
-				<embed class="logo_img" src="img/love or take.svg" type="image/svg+xml" />
-			</div>
+            <canvas id="myCanvas"></canvas>
+			<script>
+				var scene = new xeogl.Scene({
+					canvas: "myCanvas",
+					transparent: true
+				});
+				xeogl.setDefaultScene(scene);
+
+				var kk = new xeogl.GLTFModel({
+					id: "kk", //跟變數名稱建議一樣
+					src: "models/ptg/cd.gltf",
+				});
+
+				kk.on("loaded", function() {
+					var cameraFlight = new xeogl.CameraFlightAnimation();
+					cameraFlight.flyTo(kk);
+				});
+
+				var cameraControl = new xeogl.CameraControl();
+
+				scene.on("tick", function () {
+					var camera = scene.camera;
+					camera.orbitYaw(0.1); //3D旋轉速度
+					// camera.orbitPitch(-4); //垂直
+				});
+			</script>
 		</header>
 
-		<section id="first">
-			<div class="container">
-				<div class="row">
-					<div class="col"></div>
-					<div class="col-md-8">
-						<img class="img-fluid" src="./img/profile-pentagon.jpg">
-					</div>
-					<div class="col"></div>
-				</div>
-			</div>
-		</section>
-
-		<hr class="hr_yellow">
-
+	<div class="container-fluid text-center">
+        <section>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-6">
+                    <h1 class="text-left mb-4 h1-text">Awards</h1>
+                    <div class="text-left awards-content">
+                        <p>2020 《 Asia Artist Awards 2020 - ICON AWARD 》</Asia></p>
+                        <p>2019 《 2019 Korea Volunteer Awards 韓國奉仕大賞 - 本賞 》</2019></p>
+                        <p>2019 《 M2 X Genie Music Awards - M2 Hot Star Award 》</p>
+                        <p>2019 《 Asia Model Festival Awards - Popular Star Award (Singer) 》</p>
+                        <p>2018 《 2018 KOREA POPULAR MUSIC AWARDS - 大眾歌唱實演獎 》</p>
+                        <p>2018 《 2018 Korea Culture Entertainment Award - KPop Singer Award 》</p>
+                        <p>2017 《 10th KMF 2017 - Rising star Award 》</p>
+                        <p>2017 《 第1屆 Soribada Best K-Music Awards - 新人獎 》</p>
+                        <p>2017 《 Asia Model Festival Awards - New Star Award 》</p>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </section>
+        <hr class="hr_pink">
 		<section id="second">
 			<div class="container">
-				<div class="row">
-					<div class="col"></div>
-					<div class="col-md-8">
-						<img class="pen_title" src="img/Pentagon_title.svg" >
-                        <div class="content_ptg">
-                            <p>PENTAGON（韓語：펜타곤，官方簡稱：PTG）</p>
-                            <p>是韓國Cube娛樂旗下的男子音樂組合，最初由10名成員組成</p>
-                            <p>現任成員有韓國籍的 珍虎、Hui、洪碩 、信源、Yeo One、Kino、禹奭，日本籍的Yuto，以及中國籍的閆桉</p>
-                            <br>
-                            <p>2016年5月2日，出道節目《PENTAGON MAKER》首播</p>
-                            <p>10月10日正式出道，發行首張迷你專輯《PENTAGON》，主打歌《GORILLA》</p>
-                            <p>10月13日，MNET《M Countdown》首次出演</p>
-                            <p>團名是期許「兼具歌唱/Rap、舞蹈、才華、團隊合作、意志」</p>
-                            <p>問候口號是「TENTASTlC!大家好，我們是PENTAGON!」</p>
-                            <p>粉絲名是「UNlVERSE」，應援色是「UNlNAVY」</p>
-                        </div>
-					</div>
-					<div class="col"></div>
-				</div>
-			</div>
+                
+            </div>
 		</section>
-		<footer class="footer py-3">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-4 text-lg-start"><a href="http://www.cubeent.co.kr/pentagon"><img class="img-fluid cube-logo" src="./img/Cube_Entertainment.png"></a></div>
-					<div class="col-lg-4 my-3 my-lg-0"></div>
-					<div class="col-lg-4 text-lg-end">
-						<a class="btn btn-dark btn-social mx-2" target="_black" href="https://twitter.com/CUBE_PTG"><i class="fab fa-twitter"></i></a>
-						<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.facebook.com/pentagon.unitedcube"><i class="fab fa-facebook-f"></i></a>
-						<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.instagram.com/CUBE_PTG/"><i class="fab fa-instagram"></i></a>
-						<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.youtube.com/channel/UCw4NcAAtRsjL-cGlBrUnMTQ"><i class="fab fa-youtube"></i></a>
-						<a class="btn btn-dark btn-social mx-2" target="_black" href="https://weibo.com/cubeptg?from=page_100505_profile&wvr=6&mod=myfollowhisfan&refer_flag=1005050010_&is_all=1"><i class="fab fa-weibo"></i></a>
-					</div>
+	</div>
+
+	<footer class="footer py-3">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 text-lg-start"><a href="http://www.cubeent.co.kr/pentagon"><img class="img-fluid cube-logo" src="./img/Cube_Entertainment.png"></a></div>
+				<div class="col-lg-4 my-3 my-lg-0"></div>
+				<div class="col-lg-4 text-lg-end">
+					<a class="btn btn-dark btn-social mx-2" target="_black" href="https://twitter.com/CUBE_PTG"><i class="fab fa-twitter"></i></a>
+					<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.facebook.com/pentagon.unitedcube"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.instagram.com/CUBE_PTG/"><i class="fab fa-instagram"></i></a>
+					<a class="btn btn-dark btn-social mx-2" target="_black" href="https://www.youtube.com/channel/UCw4NcAAtRsjL-cGlBrUnMTQ"><i class="fab fa-youtube"></i></a>
+					<a class="btn btn-dark btn-social mx-2" target="_black" href="https://weibo.com/cubeptg?from=page_100505_profile&wvr=6&mod=myfollowhisfan&refer_flag=1005050010_&is_all=1"><i class="fab fa-weibo"></i></a>
 				</div>
 			</div>
-		</footer>
-		
-	</div>
+		</div>
+	</footer>
 </body>
 </html>
