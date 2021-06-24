@@ -355,7 +355,7 @@ header.masthead .masthead-subheading {
 /* 卷軸底色 */
 ::-webkit-scrollbar { width:5px; background-color:#fbfbfb;}
 /* 卷軸拉的軸軌的顏色 */
-::-webkit-scrollbar-thumb:vertical {background-color:#FFD6E4;}
+::-webkit-scrollbar-thumb:vertical {background-color:#f9e3d9;}
 
 
 /*反白*/

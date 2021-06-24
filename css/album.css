@@ -156,8 +156,6 @@ header.masthead .masthead-subheading {
     background: linear-gradient(90deg, #336E7400 0%, #75589B 50%, #336E7400 100%);
 }
 
-
-
 .footer {
     background-color: #f9e3d9;
     border-top: 2px solid #fff;
@@ -204,11 +202,108 @@ header.masthead .masthead-subheading {
     top: -13rem;
 }
 
+.h1-text-2 {
+    background: linear-gradient(90deg, #F75573 0%, #75589B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 21rem;
+    -webkit-text-stroke: 2px #fff;
+    font-size: 4rem;
+    font-family: 'Concert One', cursive;
+    margin:0 auto;
+}
+
+.border-img {
+    border: 5px solid #fff;
+    filter: drop-shadow(3px 3px 3px rgba(133, 133, 133, 0.25));
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    width: 75%;
+    height: 100%;
+    background: #f9e3d980;
+    opacity: 0;
+    z-index: 1;
+    left: 12.5%;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    background-color: #fff0;
+}
+
+.modal-content {
+    background-color: #FFF6F7;
+    border:none;
+}
+
+.lot-modal {
+    color: #F75573;
+}
+
+.text-pink {
+    color: #f4c0c0;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: .5rem;
+}
+
+.h1-pink {
+    font-size: 5rem;
+    font-family: 'Staatliches', cursive;
+    line-height: 5rem;
+    background: #ffea79;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 4px 4px 0 #F75573;
+    letter-spacing: 0.5rem;
+}
+
+.more {
+    color: #FFF;
+    font-family: 'Concert One', cursive;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.tracklist-lot {
+    letter-spacing: .2rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.modal-weth {
+    background-color: #edefff;
+}
+
+.daisy-modal {
+    color: #8459B5;
+}
+
+.h1-purple {
+    font-size: 5rem;
+    font-family: 'Staatliches', cursive;
+    line-height: 5rem;
+    background: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffc4c4;
+    text-shadow: 4px 4px 0 #8459B5;
+    letter-spacing: 0.5rem;
+}
 
 /* 卷軸底色 */
 ::-webkit-scrollbar { width:5px; background-color:#fbfbfb;}
 /* 卷軸拉的軸軌的顏色 */
-::-webkit-scrollbar-thumb:vertical {background-color:#FFD6E4;}
+::-webkit-scrollbar-thumb:vertical {background-color:#f9e3d9;}
 
 
 /*反白*/

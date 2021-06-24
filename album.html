@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/album.css">
+	<link rel="stylesheet" type="text/css" href="./css/album.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/pentagon.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 	<script src="xeogl/xeogl.js"></script>
     <script src="xeogl/js/models/glTFModel.js"></script>
 </head>
@@ -28,8 +28,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="album.html">Album</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="award.html">Award</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="album.html">Album</a></li>
+                        <li class="nav-item"><a class="nav-link" href="award.html">Award</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,32 +66,225 @@
 		</header>
 
 	<div class="container-fluid text-center">
-        <section>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-md-6">
-                    <h1 class="text-left mb-4 h1-text">Awards</h1>
-                    <div class="text-left awards-content">
-                        <p>2020 《 Asia Artist Awards 2020 - ICON AWARD 》</Asia></p>
-                        <p>2019 《 2019 Korea Volunteer Awards 韓國奉仕大賞 - 本賞 》</2019></p>
-                        <p>2019 《 M2 X Genie Music Awards - M2 Hot Star Award 》</p>
-                        <p>2019 《 Asia Model Festival Awards - Popular Star Award (Singer) 》</p>
-                        <p>2018 《 2018 KOREA POPULAR MUSIC AWARDS - 大眾歌唱實演獎 》</p>
-                        <p>2018 《 2018 Korea Culture Entertainment Award - KPop Singer Award 》</p>
-                        <p>2017 《 10th KMF 2017 - Rising star Award 》</p>
-                        <p>2017 《 第1屆 Soribada Best K-Music Awards - 新人獎 》</p>
-                        <p>2017 《 Asia Model Festival Awards - New Star Award 》</p>
+        <section id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-center mb-5 h1-text-2">Album Info</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> More</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/1-LOVE or TAKE.jpg" alt="LOVE or TAKE" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #F75573;">2021.03.15</div>
+                                <div class="portfolio-caption-subheading" style="color: #FF9191;">LOVE or TAKE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=QDb95ScTwfw">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/2-Eternal Flame.jpg" alt="Eternal Flame" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #D33453;">2020.12.18</div>
+                                <div class="portfolio-caption-subheading" style="color: #E96648;">Eternal Flame</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> More</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/3-WETH.jpg" alt="WE:TH" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #8459B5;">2020.10.12</div>
+                                <div class="portfolio-caption-subheading" style="color: #ab7de0;">WE:TH</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=eMIBLloecRI">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/4-THE BLACK HALL.jpg" alt="UNIVERSE:THE BLACK HALL" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #FE222B;">2020.02.12</div>
+                                <div class="portfolio-caption-subheading" style="color: #a88a8a;">UNIVERSE:THE BLACK HALL</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=oDyFLIep_SA">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/5-SUM(MER).jpg" alt="SUM(ME:R)" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #07C1EF;">2019.07.17</div>
+                                <div class="portfolio-caption-subheading" style="color: #74cbe0;">SUM(ME:R)</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=ALz4b6x0A70">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/6-Genieus.jpg" alt="Genie:us" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #F9305C;">2019.03.27</div>
+                                <div class="portfolio-caption-subheading" style="color: #f57591;">Genie:us</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 7-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=DjrQGkFUnBo">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/7-Thumbs Up!.png" alt="Thumbs Up!" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #16AA34;">2018.09.10</div>
+                                <div class="portfolio-caption-subheading" style="color: #3ea352;">Thumbs Up!</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 8-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=z4dH6hEMuwk">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/8-Positive.jpg" alt="Positive" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #58a0cc;">2018.04.02</div>
+                                <div class="portfolio-caption-subheading" style="color: #92BED9;">Positive</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 9-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=bGqX-2y5_ac">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/9-DEMO_02.jpg" alt="DEMO_02" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #7a6a4b;">2017.12.01</div>
+                                <div class="portfolio-caption-subheading" style="color: #A9936B;">DEMO_02</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 10-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=j7VUyTI0UF0">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/10-DEMO_01.jpg" alt="DEMO_01" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #0832B1;">2017.09.06</div>
+                                <div class="portfolio-caption-subheading" style="color: #3b5cbd;">DEMO_01</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 11-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=7z3b4S_VxPg">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/11-cermoney.jpg" alt="CEREMONY" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #6A9CAC;">2017.06.12</div>
+                                <div class="portfolio-caption-subheading" style="color: #98bbc7;">CEREMONY</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 12-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=RscLqJOUSg0">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/12-beautiful.JPG" alt="beautiful" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #222F50;">2018.09.10</div>
+                                <div class="portfolio-caption-subheading" style="color: #42527a;">Beautiful (Prod 정일훈)</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 13-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=svNhuxBDkTo">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/13-FIVE SENSES.jpg" alt="FIVE SENSES" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #C59903;">2016.12.07</div>
+                                <div class="portfolio-caption-subheading" style="color: #e2b626;">FIVE SENSES</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 14-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" target="_blank" href="https://www.youtube.com/watch?v=dKPAzfLxKzI">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-angle-double-right"></i><span class="more"> Youtube</span></div>
+                                </div>
+                                <img class="img-fluid border-img w-75" src="./img/album/14-PENTAGON.jpg" alt="PENTAGON" />
+                            </a>
+                            <div class="portfolio-caption w-75">
+                                <div class="portfolio-caption-heading" style="color: #080074;">2016.10.10</div>
+                                <div class="portfolio-caption-subheading" style="color: #0C00A3;">PENTAGON</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col"></div>
             </div>
         </section>
-        <hr class="hr_pink">
-		<section id="second">
-			<div class="container">
-                
-            </div>
-		</section>
 	</div>
 
 	<footer class="footer py-3">
@@ -109,5 +302,92 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog w-75 mx-auto">
+			<div class="modal-content">
+				<div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times" style="color: #F75573;"></i></div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<div class="modal-body lot-modal">
+								<!-- Project details-->
+								<h1 class="h1-pink">LOVE or TAKE</h2>
+								<p class="item-intro text-pink">Pentagon 11th Mini album</p>
+								<div class="row mb-5">
+									<div class="col">
+										<img class="img-fluid d-block mx-auto w-75" src="./img/album/romantic.png" alt="romantic ver." />
+										<span style="color: #F75573;">Romantic Ver.</span>
+									</div>
+									<div class="col">
+										<img class="img-fluid d-block mx-auto w-75" src="./img/album/sporty.png" alt="sporty ver." />
+										<span style="color: #75589B;">Mild Ver.</span>
+									</div>
+									<div class="col">
+										<img class="img-fluid d-block mx-auto w-75" src="./img/album/mild.png" alt="mild ver." />
+										<span style="color: #A8A8A8;">Sporty Ver.</span>
+									</div>
+								</div>
+								<div class="col-lg-10 mx-auto mt-5 text-left">
+									<h3 class="tracklist-lot">Track List</h3>
+									<p>01. 10s and<br>02. DO_or_NOT (Title)<br>03. 1+1<br>
+										04. Baby I Love You<br>05. That's Me<br>06. Sing-a-song<br>07. Boy in time (HUI Solo) [Bonus Track]</p>
+								</div>
+								<div class="mx-auto mt-5" >
+									<iframe class="border-img" width="800" height="500" src="https://www.youtube.com/embed/cU6cnHHX4LM?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio item 3 modal popup-->
+	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog w-75 mx-auto">
+			<div class="modal-content modal-weth">
+				<div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times" style="color: #8459B5;"></i></div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<div class="modal-body daisy-modal">
+								<!-- Project details-->
+								<h1 class="h1-purple">WE:TH</h2>
+								<p class="item-intro" style="color: #9a81b6;">Pentagon 10th Mini album</p>
+								<div class="row mb-5">
+									<div class="col">
+										<img class="img-fluid d-block mx-auto w-75 border-img" src="./img/album/SEEN Ver.png" alt="SEEN Ver." />
+										<span style="color: #8A99EA;">SEEN Ver.</span>
+									</div>
+									<div class="col">
+										<img class="img-fluid d-block mx-auto w-75 border-img" src="./img/album/UNSEEN ver.png" alt="UNSEEN ver." />
+										<span style="color: #F08372;">UNSEEN Ver.</span>
+									</div>
+								</div>
+								<div class="row mb-5">
+									<div class="col-lg-5 mx-auto mt-5 text-left">
+										<img class="img-fluid d-block mx-auto w-75" src="./img/album/weth-white.png" alt="WE:TH-white" />
+									</div>
+									<div class="col-lg-5 mx-auto mt-5 text-left pt-4">
+										<h3 class="tracklist-lot">Track List</h3>
+										<p>01. DAISY (Title)<br>02. Beautiful Goodbye<br>03. That Sun, That Moon, That Day<br>
+											04. You Like<br>05. Paradise (This Night Where Stars Shine)<br>06. I’m Here  (JinHo Solo) [CD Only]</p>
+									</div>
+								</div>
+								
+								<div class="mx-auto mt-5" >
+									<iframe class="border-img" width="800" height="500" src="https://www.youtube.com/embed/W7ZIz4w9Edo?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
