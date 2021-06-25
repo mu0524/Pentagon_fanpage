@@ -100,6 +100,7 @@ header.masthead {
 header.masthead .masthead-heading {
     font-size: 6.5rem;
     font-family: 'Staatliches', cursive;
+    font-weight: normal;
     line-height: 5rem;
     background: #ffea79;
     background-clip: text;
@@ -200,6 +201,11 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #CFB8E7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cca00000;
 }
 
 .timeline::before {
@@ -232,6 +238,7 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #F1ABC7;
+    text-decoration: none;
 }
 
 #h4-second {
@@ -248,6 +255,7 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #F8ECA0;
+    text-decoration: none;
 }
 
 #h4-third {
@@ -264,6 +272,7 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #74DEE1;
+    text-decoration: none;
 }
 
 #h4-fourth {
@@ -280,6 +289,7 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #F75573;
+    text-decoration: none;
 }
 
 #h4-fifth {
@@ -296,6 +306,7 @@ header.masthead .masthead-subheading {
     font-size: 2.5rem;
     -webkit-text-stroke: 1.5px #000;
     text-shadow: -3px 2px 0 #807C7D;
+    text-decoration: none;
 }
 
 #h4-sixth {
