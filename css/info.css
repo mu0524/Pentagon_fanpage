@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 *{
     margin: 0;
@@ -9,14 +10,13 @@
 }
 
 body {
-    background-color: #fbfbfb;
+    background-color:#fbfbfb;
     overflow-x: hidden;
 }
 
-/* background:linear-gradient(180deg, #fbfbfb 0% ,#FBE7EE 30%, #FEFFD6 40%, #D4D6FE 70%, #FFD6E4 100%); */
 
 #mainNav {
-    background-color: #f9e3d900;
+    background-color: #f1abc700;
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
@@ -92,19 +92,39 @@ body {
 }
 
 header.masthead {
-    height: 100vh;
-    background-image: url('../img/hender.png');
+    height: 50vh;
+    background-image: url('../img/texture.png');
     border-bottom: 10px solid #f1abc790;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
-section {
-    padding: 4rem 0;
+header.masthead .masthead-heading {
+    font-size: 6.5rem;
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+    background: #ffea79;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 4px 4px 0 #F75573;
+    letter-spacing: 1rem;
+    margin-bottom: 1.2rem;
 }
 
-.logo_img {
-    width: 60vw;
-    margin: 12.5vw 0;
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1rem;
+    margin-bottom: 0rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
 }
+
+/* section {
+    padding: 5rem 0;
+} */
 
 .hr_yellow {
     width: 80vw;
@@ -138,48 +158,41 @@ section {
     background: linear-gradient(90deg, #336E7400 0%, #75589B 50%, #336E7400 100%);
 }
 
-#img_romantic {
-    opacity: 1;
-    transition: 3s;
+.text-left {
+    text-align: left !important;
 }
 
-
-#img_romantic_ro {
-    opacity: 0;
-    margin-top: -70%;
-    transition: 3s;
+.h1-text {
+    background: linear-gradient(90deg, #F75573 0%, #75589B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 17rem;
+    -webkit-text-stroke: 2px #fff;
+    font-size: 4rem;
+    font-family: 'Concert One', cursive;
+    margin: 0 auto;
 }
 
-#img_Sporty {
-    opacity: 1;
-    transition: 3s;
+.content {
+    text-align: left;
+    font-family: 'Noto Sans TC', cursive;
+    color: #B64D60;
+    text-shadow: 2px 2px 0 #ffe4e4;
+    letter-spacing: 2px;
 }
 
-#img_Sporty_ro {
-    opacity: 0;
-    margin-top: -65%;
-    transition: 3s;
+.border-img {
+    border: 5px solid #fff;
+    filter: drop-shadow(2px 2px 2px rgba(133, 133, 133, 0.25));
 }
 
-#img_Mild {
-    opacity: 1;
-    transition: 3s;
+a {
+    color: #B64D60;
 }
 
-#img_Mild_ro {
-    opacity: 0;
-    margin-top: -65%;
-    transition: 3s;
-}
-
-#fourth {
-    padding-top: 12rem;
-    padding-bottom: 5rem;
-    background: linear-gradient(180deg, #fbfbfb 0%, #d4d6fe 20%, #ffd6e4 80%, #fbfbfb 100%);
-}
-
-.lot_img {
-    width: 80%;
+a:hover {
+    color: #cca00000;
 }
 
 .footer {
