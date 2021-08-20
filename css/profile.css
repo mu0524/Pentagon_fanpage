@@ -92,8 +92,12 @@ body {
 }
 
 header.masthead {
+    width: 60vw;
     height: 100vh;
     padding-top: 4rem;
+    background-image: url('../img/love\ or\ take.svg');
+    background-size: contain;
+    margin: 0 auto;
 }
 
 .hr_yellow {

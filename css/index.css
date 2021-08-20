@@ -94,6 +94,8 @@ body {
 header.masthead {
     height: 100vh;
     background-image: url('../img/hender.png');
+    background-size: contain;
+    background-color: #f5e0d6;
     border-bottom: 10px solid #f1abc790;
 }
 
